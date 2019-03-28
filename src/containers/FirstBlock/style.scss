@@ -1,0 +1,217 @@
+.FirstBlock {
+  position: relative;
+  background-image: url('../../assets/Bg/Car.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-bottom: 5vh;
+  width: 100%;
+  padding-left: 11.6vw;
+  height: 43vw;
+  box-sizing: border-box;
+
+  .TitleBlock {
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 4vw;
+    width: 47vw;
+    height: 11vw;
+
+    &-Rectangle {
+      z-index: 1;
+      position: absolute;
+      top: 0;
+      left: 0.5vw;
+      width: 12vw;
+    }
+
+    &-Title {
+      z-index: 2;
+      color: white;
+      margin: 0;
+      font-size: 3vw;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: -0.5px;
+    }
+
+    &-ButtonsContainer {
+      display: flex;
+      justify-content: space-between;
+
+      .Button {
+        border: 2px solid white;
+        background: transparent;
+        color: white;
+
+        &:hover, &:focus {
+          background-color: white;
+          color: #584b90;
+        }
+      }
+    }
+  }
+
+  .ManBlock {
+    width: 45vw;
+    position: absolute;
+    right: 0;
+    top: -1vh;
+    background-image: url('../../assets/Bg/Man.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    bottom: 0;
+  }
+
+  .BlueBlock {
+    position: absolute;
+    right: 0;
+    bottom: 3.5vw;
+    background-image: url('../../assets/test.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    height: 15vw;
+    width: 45.5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-direction: column;
+    padding-right: 9.3vw;
+    padding-bottom: 2.4vw;
+    padding-top: 3.2vw;
+
+    &-Title {
+      font-size: 1.7vw;
+      color: white;
+      font-weight: 400;
+      text-transform: uppercase;
+      margin: 0 1.3vw 0 0;
+    }
+  }
+
+  .Timer {
+    display: flex;
+    width: 24vw;
+    height: 5vw;
+    justify-content: space-between;
+
+    &-Item {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      text-align: center;
+
+      &:nth-child(2) h1 {
+        opacity: .9;
+      }
+
+      &:nth-child(3) h1 {
+        opacity: .7;
+      }
+
+      &:nth-child(4) h1 {
+        opacity: .6;
+      }
+
+      h3 {
+        font-size: 0.9vw;
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        font-size: 3.2vw;
+      }
+
+      h1, h3 {
+        color: white;
+        margin: 0;
+      }
+    }
+  }
+
+  &_mobile {
+    height: 500px;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 40px 0 0;
+
+    .TitleBlock {
+      height: 100px;
+      padding-top: 10px;
+      width: 100%;
+      padding-right: 10px;
+      padding-left: 10px;
+
+      &-Rectangle {
+        width: 100px;
+        height: 40px;
+      }
+
+      &-Title {
+        font-size: 18px;
+        margin-left: 6vw;
+      }
+    }
+
+    .Button {
+      width: 90px;
+      height: 40px;
+
+      i {
+        font-size: 16px;
+        margin-right: 5px;
+      }
+
+      &-Text {
+        font-size: 8px;
+      }
+
+      &_m {
+        width: 110px;
+      }
+    }
+
+    .ManBlock {
+      right: unset;
+      left: 0;
+      width: 100%;
+      top: unset;
+      height: 70%;
+
+      .BlueBlock {
+        width: 100%;
+        height: 120px;
+        align-items: flex-end;
+        justify-content: space-around;
+        padding: 0 20px 0 0;
+
+        &-Title {
+          font-size: 20px;
+          margin-left: 20px;
+        }
+
+        .Timer {
+          width: 240px;
+          height: 40px;
+
+          &-Item {
+            h3 {
+              font-size: 12px;
+            }
+
+            h1 {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

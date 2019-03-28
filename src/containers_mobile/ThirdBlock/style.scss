@@ -1,0 +1,99 @@
+.ThirdBlockMobile-Wrapper {
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .TitleBlock {
+    width: 90%;
+    padding-top: 15px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+    &-BackgroundText {
+      position: absolute;
+      top: -12px;
+      letter-spacing: 0.1vw;
+      margin: 0;
+      font-size: 60px;
+      color: #f2f3f5;
+      text-transform: uppercase;
+      z-index: 1;
+      font-weight: 500;
+    }
+
+    &-Rectangle {
+      position: absolute;
+      z-index: 2;
+      top: 15px;
+      left: 5%;
+      width: 50px;
+      height: 20px;
+
+    }
+
+    &-Title {
+      margin-left: 5%;
+      z-index: 3;
+      margin: 0;
+      font-size: 14px;
+      text-transform: uppercase;
+      text-align: center;
+      font-weight: 500;
+      letter-spacing: 2px;
+    }
+  }
+
+  .ThirdBlockMobile {
+    display: flex;
+    width: 90%;
+    padding-bottom: 72px;
+    margin-top: 34px;
+    flex-direction: column;
+
+    &-Item {
+      margin: 20px 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .Point {
+        width: 35px;
+        height: 35px;
+
+        &_disabled {
+          width: 20px;
+          height: 20px;
+        }
+
+        &-Dot {
+          width: 15px;
+          height: 15px;
+          border: 7px solid white;
+        }
+
+        i {
+          font-size: 18px;
+        }
+      }
+
+      .MiddleLine {
+        height: 30px;
+        margin: 5px 0;
+      }
+
+      .List .Item {
+        &-Text {
+          font-size: 16px;
+        }
+      }
+    }
+
+    &-ItemTitle {
+      font-size: 14px;
+      margin: 5px 0;
+    }
+  }
+}

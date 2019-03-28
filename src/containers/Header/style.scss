@@ -1,0 +1,85 @@
+.Header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 6.7vw;
+  background-color: #ffffff;
+  padding: 0 8.9vw;
+  box-sizing: border-box;
+
+  &-Rectangle {
+    position: absolute;
+    left: -5vw;
+    top: -1px;
+    height: 10.5vw;
+    z-index: 2;
+    opacity: .8;
+    width: 14vw;
+  }
+
+  &-Logo {
+    width: 7.8vw;
+    height: 2.2vw;
+  }
+
+  &-Menu {
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
+    padding-right: 6.5vw;
+
+    .Item {
+      margin-left: 2.8vw;
+      text-transform: uppercase;
+      font-size: 0.8vw;
+      font-family: myriad-pro, sans-serif;
+      font-style: normal;
+    }
+  }
+
+  .Button {
+    border-color: #433386;
+    color: #473889;
+  }
+
+  &_mobile {
+
+    background-color: aliceblue;//todo
+    height: 110px;
+    padding: 20px 4vw;
+    flex-direction: column;
+    align-items: flex-end;
+
+    .Header-Rectangle {
+      display: none;
+    }
+
+    .Header-Logo {
+      position: absolute;
+      left: 80px;
+      bottom: 30px;
+      width: 70px;
+      height: 24px;
+    }
+
+    .Header-Menu {
+      width: unset;
+      justify-content: unset;
+      padding-right: unset;
+
+      .Item {
+        margin-left: 15px;
+        font-size: 4vw;
+      }
+    }
+
+    .Button {
+      width: 120px;
+      height: 35px;
+
+      &-Text {
+        font-size: 2.5vw;
+      }
+    }
+  }
+}

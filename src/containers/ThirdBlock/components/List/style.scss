@@ -1,0 +1,43 @@
+.List {
+
+  $color: black;
+  $checkedColor: #8b8e97;
+  $currentColor: #3e9fcf;
+
+  .Item {
+    display: flex;
+    align-items: center;
+    margin-top: 4px;
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    &-Dot {
+      border-radius: 100%;
+      background-color: $color;
+      width: 4px;
+      height: 4px;
+
+      &_checked {
+        background-color: $checkedColor;
+      }
+
+    }
+
+    &-Text {
+      color: $color;
+      margin-left: 16px;
+      letter-spacing: 0.6px;
+      font-size: 1vw;
+
+      &_current, &_disabled {
+        font-weight: 600;
+      }
+
+      &_checked {
+        color: $checkedColor;
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+.MiddleLine {
+  margin: 0;
+  width: 2px;
+  border: none;
+  background-color: #d4eaf5;
+
+  &_current {
+    background-color: #2998cc;
+  }
+
+  &_disabled {
+    width: 0;
+    border: 1px dashed #d4eaf5;
+    background-color: unset;
+  }
+
+  &_right {
+    position: absolute;
+    top: 10%;
+    bottom: 0;
+  }
+}

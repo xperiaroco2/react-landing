@@ -1,0 +1,29 @@
+.TopLine {
+  position: absolute;
+  border: none;
+  height: 2px;
+  background-color: #dde3eb;
+  margin: 0;
+
+  &_left {
+    left: 10%;
+    right: 53%;
+  }
+
+  &_right {
+    left: calc(50% + 1.7vw);
+    width: 4.5vw;
+  }
+
+  &_disabled {
+    top: 8px;
+  }
+
+  &_checked {
+    top: 12px;
+  }
+
+  &_current {
+    top: 16px;
+  }
+}

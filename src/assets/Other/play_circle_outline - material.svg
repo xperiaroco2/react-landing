@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>play_circle_outline - material</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" font-family="material" font-size="20" font-weight="normal">
+        <g id="Landing" transform="translate(-664.000000, -409.000000)" fill="#FFFFFF">
+            <g id="1-Welcome-screen" transform="translate(0.000000, 76.000000)">
+                <g id="Group-9" transform="translate(167.000000, 222.000000)">
+                    <g id="BTN" transform="translate(48.000000, 92.000000)">
+                        <g id="2" transform="translate(432.000000, 0.000000)">
+                            <text id="play_circle_outline---material">
+                                <tspan x="16" y="35"></tspan>
+                            </text>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

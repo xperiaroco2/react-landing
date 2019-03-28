@@ -1,0 +1,34 @@
+.RightItem {
+  .List { min-width: 120% } //Не хватило времени переделать =(
+
+  margin-top: 18px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+
+  &-Title {
+    margin: 0;
+    position: absolute;
+    left: calc(50% + 8vw);
+    text-transform: uppercase;
+    font-size: 1.1vw;
+    top: 0.1vw;
+
+    &_current {
+      color: #51a6d3;
+    }
+  }
+
+  &-Wrapper {
+    position: relative;
+    align-self: flex-end;
+    width: 50%;
+    margin-top: 0.3vh;
+  }
+
+  .List-Wrapper {
+    padding-left: 8.5vw;
+    padding-bottom: 1vh;
+  }
+}
