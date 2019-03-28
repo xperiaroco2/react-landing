@@ -1,9 +1,17 @@
+const path = require('path');
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 const combineLoaders = require("webpack-combine-loaders");
+const WebpackAssetsManifest = require('webpack-assets-manifest');
+const ManifestPlugin = require('webpack-manifest-plugin');
 
 module.exports = {
   devServer: {
     historyApiFallback: true,
+  },
+  output: {
+    path: path.join( __dirname, 'dist' ),
+    filename: '[name]-[hash].js',
+    chunkFilename: '[id]-[chunkhash].js',
   },
   module: {
     rules: [
@@ -68,6 +76,8 @@ module.exports = {
     new HtmlWebPackPlugin({
       template: "./public/index.html",
       filename: "./index.html"
-    })
+    }),
+    new ManifestPlugin(),
+    new WebpackAssetsManifest(),
   ]
 };
