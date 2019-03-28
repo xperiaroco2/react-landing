@@ -1,6 +1,7 @@
 {
   "name": "my-app",
   "version": "0.1.0",
+  "homepage": "xxxrocoxxx.github.io/react-landing",
   "dependencies": {
     "classnames": "^2.2.6",
     "node-sass": "^4.11.0",
